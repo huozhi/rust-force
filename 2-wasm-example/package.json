@@ -1,0 +1,15 @@
+{
+  "name": "wasm-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "local-web-server": "^4.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+      "start": "ws"
+  },
+  "author": "",
+  "license": "ISC"
+}

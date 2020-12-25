@@ -1,0 +1,14 @@
+[package]
+name = "add2-wasm"
+version = "0.1.0"
+authors = ["Hey <hello@test.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+

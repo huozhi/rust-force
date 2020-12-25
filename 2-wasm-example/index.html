@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+WebAssembly.instantiateStreaming(
+  fetch("add2_wasm_bg.wasm")
+).then((obj) => {
+  console.log('wasm init stream result', obj)
+  console.log('module', obj.instance)
+  console.log(obj.instance.exports.add_two(4, 8));
+});
+</script>
+</body>
+</html>
